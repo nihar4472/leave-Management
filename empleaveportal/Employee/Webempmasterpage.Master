@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Webempmasterpage.master.cs" Inherits="empleaveportal.Employee.Webempmasterpage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <title></title>
+    <link href="../webmain.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <style type="text/css">
+        .auto-style1 {
+            text-align: center;
+            font-size: xx-large;
+            background-color:#ffffff;
+        }
+        .auto-style2 {
+            color: #808080;
+        }
+         .auto-style3 {
+             height: 34px;
+         }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+   
+        <div id="menu">
+            <table align="center" style="width: 1024px;">
+                <tr style="height: 100px;">
+                    <td class="auto-style1"><span class="auto-style2">ABC INC.</span>
+                    </td>
+                </tr>
+                <tr style="height: 30px;; border:solid 1px white;">
+                    <td class="auto-style3">
+                        <ul>
+                            <li><a href="Webempdetail.aspx">Personal Details</a></li>
+                            <li><a href="WebEmpleaveform.aspx">Leave Application</a></li>
+                             <li><a href="Webempleavestatus.aspx">Leave Status</a></li>
+                        </ul>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         <asp:Label ID="Label1" runat="server"></asp:Label>&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" >LogOut</asp:LinkButton>
+                    </td>
+                </tr>
+                <tr style="height: 400px; vertical-align:top;">
+                    <td>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                        </td>
+                </tr>
+                <tr style="height: 30px; background-color:#b50000;">
+                    <td class="auto-style2">&nbsp;&nbsp;&nbsp; Copyright &copy;Nihar Bhat
+                    </td>
+                </tr>
+            </table>
+    </div>
+    </form>
+</body>
+</html>
